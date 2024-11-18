@@ -11,8 +11,7 @@
 <body>
     <nav class="navbar">
         <a href="../index.html" class="back-btn">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-            Back
+            <ion-icon name="chevron-back-outline"></ion-icon>
         </a>
         <div class="theme-switch">
             <ion-icon name="sunny-outline"></ion-icon>
@@ -28,30 +27,28 @@
         <div class="calculator">
             <div class="display">
                 <div id="history"></div>
-                <p id="result">
-                    0
-                </p>
+                <p id="result">0</p>
             </div>
             <div class="buttons">
                 <button onclick="clearDisplay()">C</button>
                 <button onclick="clearEntry()">CE</button>
-                <button onclick="backspace()">⌫</button>
-                <button class="operator" onclick="setOperation('/')">/</button>
+                <button onclick="backspace()"><ion-icon name="backspace-outline"></ion-icon></button>
+                <button class="operator" onclick="appendOperation('/')">/</button>
 
                 <button onclick="appendNumber('7')">7</button>
                 <button onclick="appendNumber('8')">8</button>
                 <button onclick="appendNumber('9')">9</button>
-                <button class="operator" onclick="setOperation('*')">×</button>
+                <button class="operator" onclick="appendOperation('*')">×</button>
 
                 <button onclick="appendNumber('4')">4</button>
                 <button onclick="appendNumber('5')">5</button>
                 <button onclick="appendNumber('6')">6</button>
-                <button class="operator" onclick="setOperation('-')">-</button>
+                <button class="operator" onclick="appendOperation('-')">-</button>
 
                 <button onclick="appendNumber('1')">1</button>
                 <button onclick="appendNumber('2')">2</button>
                 <button onclick="appendNumber('3')">3</button>
-                <button class="operator" onclick="setOperation('+')">+</button>
+                <button class="operator" onclick="appendOperation('+')">+</button>
 
                 <button onclick="toggleSign()">±</button>
                 <button onclick="appendNumber('0')">0</button>
@@ -62,9 +59,7 @@
     </div>
 
     <footer class="footer">
-        <p>
-            &copy; 2024 Fahri Akbar. Semua Hak Dilindungi.
-        </p>
+        <p>&copy; 2024 Fahri Akbar. Semua Hak Dilindungi.</p>
     </footer>
     <script src="script.js" type="text/javascript" charset="utf-8"></script>
 </body>
