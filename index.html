@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Login Page</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="loginForm" onsubmit="return validateLogin(event)">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                        <ion-icon id="toggle-password" name="eye-outline" onclick="togglePassword()"></ion-icon>
+                    </div>
+                    <button type="submit">Log In</button>
+                    <div class="copyright">
+                        <p>
+                            &copy; 2024 Fahri Akbar. Semua Hak Dilindungi.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
